@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HW3_Tabbed.MalawiPage"
+             Title ="Lake Malawi"
+             BackgroundColor="LightBlue" >
+    
+    <ContentPage.Content>
+        <StackLayout Margin="10,0,10,0"
+                     Spacing="5">
+
+            <Label Text="Lake Malawi"
+                   TextColor="Black"
+                   TextDecorations="Underline"
+                   FontSize="40"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+            
+            <!-- A horizontal ScrollView of Lake Malawi pics -->
+            <ScrollView Orientation="Horizontal" >
+                <StackLayout Orientation="Horizontal"
+                             Spacing="10">                    
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/0/00/Stony_shore_at_malawi_lake.jpg"    
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />                    
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/d/db/Lake_malawi_mangochi.jpg"                    
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />                    
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/3/36/Lake_Malawi_%282489696873%29.jpg"
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />                    
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/5/51/Canoes_on_Lake_Malawi.jpg"    
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                </StackLayout>
+            </ScrollView>
+
+            <!-- A vertical ScrollView containing the main body text -->
+            <ScrollView>
+                <StackLayout>                    
+                    <Label Text="Lake Malawi ranks among the world's largest lakes, being the third deepest and ninth largest by surface area. Its geography reflects the fact that it is situated in a rift valley, with the lake being long, relatively narrow, and deep. Its basin consists of a series of half-grabens (blocks of earth that have tilted and dropped during rifting). Some parts of the lakeshore are bordered by steep mountains, while the mountains that define the edges of the rift valley are separated from the lake by extensive lakeshore plains in other parts. As a result, nearshore topography varies between gently sloping beaches and steep, rocky coastline. The lake is underlain by more than 4km of sediment in its deepest regions, reflecting its great age, estimated at several million years. No lake in the world contains such a diversified collection and distinct community of cichlid fishies as Lake Malawi. Over the years, Malawi cichlids have become very popular among aquarists as they are easy to maintain and breed in captivity. The total number of cichlid species in the lake is now estimated at about 1000, which is about 200 species more than all of the freshwater species found in all of North America combined! There are many more species that have still not been discovered. Life in Malawi revolves around the tides of the Lake as its rich abundances of fish are a main source of food for both human and animals alike, all sharing its bounty. The scenic beauty of the Lake is legendary, where reeds sway in the cool breeze, monkeys rustle in the trees above you, fish Eagle's cry pierce the big African sky, a fisherman casts his net into the shimmering depths whilst hippos graze neutrally beneath distant mountains in the background."
+                           TextColor="Gray"
+                           FontSize="12"/>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- A Label that displays Lake Malawi local time on Button click-->
+            <Label x:Name="MalawiTime"
+                   Text=""  
+                   BackgroundColor="Black"
+                   TextColor="White"
+                   FontSize="Large"
+                   HorizontalOptions="Center" />     
+            
+            <Button x:Name="MalawiTimeButton" 
+                    Text="Show Lake Malawi Time"   
+                    BackgroundColor="LightSteelBlue"
+                    CornerRadius="15"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Clicked="MalawiTimeButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

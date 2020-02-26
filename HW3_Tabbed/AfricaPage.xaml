@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HW3_Tabbed.AfricaPage"
+             Title ="Great African Lakes"
+             BackgroundColor="LightBlue"> 
+    
+    <ContentPage.Content>
+        <StackLayout Margin="10,0,10,5"
+                     Spacing="5">
+            
+            <Label Text="The Great African Rift Lakes"
+                   TextColor="Black"
+                   TextDecorations="Underline"
+                   FontSize="40"
+                   HorizontalOptions="CenterAndExpand"
+                   VerticalOptions="CenterAndExpand"
+                   HorizontalTextAlignment="Center"/>
+
+            <!-- A vertical ScrollView containing the pic of lakes and main body text -->
+            <ScrollView>
+                <StackLayout>
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Lakes_of_Africa.jpg/762px-Lakes_of_Africa.jpg"
+                           HeightRequest="250"
+                           WidthRequest="250"
+                           Aspect="AspectFill"/>
+                    <Label Text="Lake Malawi, Lake Tanganyika, and Lake Victoria are known as these three African Great lakes. These African Rift lakes are a group of lakes formed by the Great Rift Valley of eastern Africa. Some of the oldest, largest and deepest lakes in the world are found here, and they are a freshwater ecoregion of great biodiversity. The lakes support millions of people with drinking water, food and livelihoods. Protecting the lakes from pollution, invasive species and development is a WWF priority in Africa. These include the 3 largest lakes in Africa - Victoria, Tanganyika and Malawi. The lakes are important habitats for a number of fish and amphibian species, abundant birdlife and numerous crocodiles. In the surrounding lake region, one finds elephants, gorillas, hippos and other wildlife in the Great Rift's mountains and valleys. Millions of people across several East African countries depend on the lakes' resources and surrounding forests for their livelihoods and day-to-day lives. Deforestation, pollution from agricultural and industrial activities, run-off from urban areas and overfishing threaten the health of many of the lakes and their water basins. To ensure people and nature benefit from this truly outstanding region of Africa, WWF has designated the Rift Valley lakes as one of its priority ecoregions for conservation. WWF's work in this region focuses on sustainable development, environmental education, and the involvement of communities in the design and implementation of conservation activities. The Rift Valley lakes are world-renowned for the diversity of cichlid fish species. Cichlids are perch-like fishes that occur only in tropical and subtropical freshwaters. The family contains more species than any other fish family - over 1000 species of cichlids live in the African Rift lakes, with many more species yet to be discovered. Introduced Nile perch and overfishing, however, have led to the decrease of many cichlid species, especially in Lake Victoria."
+                           TextColor="Gray"
+                           FontSize="12" />
+
+                    <!-- A hyperlink to donate to WWF -->
+                    <Label HorizontalOptions="Center"
+                           VerticalOptions="Center"
+                           HorizontalTextAlignment="Center">
+                        <Label.FormattedText>
+                            <FormattedString>
+                                <Span Text="To Donate to the Great African Lakes or any other WWF campaign "
+                                      FontSize="12"
+                                      TextColor="Black"/>                                
+                                <Span Text="Click Here"
+                                      FontSize="12"
+                                      TextColor="Blue"
+                                      TextDecorations="Underline">
+                                    
+                                    <!-- Bind command and set paramter to hyperlink -->
+                                    <Span.GestureRecognizers>                                        
+                                        <TapGestureRecognizer Command="{Binding LinkClicked}"
+                                                              CommandParameter="https://lp.panda.org/donate" />
+                                    </Span.GestureRecognizers>
+                                </Span>
+                            </FormattedString>  
+                        </Label.FormattedText>
+                    </Label>
+                    
+                </StackLayout>
+            </ScrollView>           
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

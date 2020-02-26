@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HW3_Tabbed.VictoriaPage"
+             Title ="Lake Victoria"
+             BackgroundColor="LightBlue">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="10,0,10,0"
+                     Spacing="5">
+
+            <Label Text="Lake Victoria"
+                   TextColor="Black"
+                   TextDecorations="Underline"
+                   FontSize="40"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <!-- A horizontal ScrollView of Lake Victoria pics -->
+            <ScrollView Orientation="Horizontal" >
+                <StackLayout Orientation="Horizontal"
+                             Spacing="10">
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/e/ea/Lake_Victoria-_Kampala-Uganda_1.jpg"    
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/1/17/Nile_river_near_lake_Victoria_01.jpg"  
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/7/7c/Getting_out_to_fish_at_dusk.jpg"
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/5/59/Lake_Victoria%27s_Mugabo_beach_beauty_03.jpg"
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                </StackLayout>
+            </ScrollView>
+
+            <!-- A vertical ScrollView containing the main body text -->
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Lake Victoria was named after Queen Victoria by the explorer John Hanning Speke, the first Briton to document it. Speke accomplished this in 1858, while on an expedition with Richard Francis Burton to locate the source of the Nile River. This expedition was financially sponsored by the Royal Geographic Society. With a surface area of approximately 59,947 square kilometres (23,146 sq mi), Lake Victoria is Africa's largest lake by area, the world's largest tropical lake, and the world's second largest fresh water lake by surface area after Lake Superior in North America. In terms of volume, Lake Victoria is the world's ninth largest continental lake, containing about 2,424 cubic kilometres of water. Lake Victoria occupies a shallow depression in Africa. The lake has a maximum depth of between 80 and 84 metres (262 and 276 ft) and an average depth of 40 metres (130 ft). Its catchment area covers 169,858 square kilometres (65,583 sq mi). The lake has a shoreline of 7,142 kilometres (4,438 mi) when digitized at the 1:25,000 level, with islands constituting 3.7 percent of this length. The lake's area is divided among three countries: Kenya (6 percent or 4,100 square kilometres or 1,600 square miles), Uganda (45 percent or 31,000 square kilometres or 12,000 square miles), and Tanzania (49 percent or 33,700 square kilometres or 13,000 square miles)."
+                           TextColor="Gray"
+                           FontSize="12"/>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- A Label that displays Lake Victoria local time on Button click-->
+            <Label x:Name="VictoriaTime"
+                   Text=""                   
+                   BackgroundColor="Black"
+                   TextColor="White"
+                   FontSize="Large"
+                   HorizontalOptions="Center" />
+            
+            <Button x:Name="VictoriaTimeButton" 
+                    Text="Lake Victoria Local Time"   
+                    BackgroundColor="LightSteelBlue"
+                    CornerRadius="15"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Clicked="VictoriaTimeButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

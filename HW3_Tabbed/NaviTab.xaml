@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:HW3_Tabbed"
+             x:Class="HW3_Tabbed.NaviTab"
+             Title ="HomePage"
+             BackgroundColor="LightBlue"
+             Appearing="OnAppearing"
+             Disappearing="OnDisappearing">
+    
+    <!-- TabbedPage child pages-->
+    <local:AfricaPage Title="Home" 
+                      Icon="home.png" />
+    <local:MalawiPage Title="Malawi"
+                      Icon="malawi.png" />
+    <local:TangPage Title="Tangan"
+                    Icon="tang.png" />
+    <local:VictoriaPage Title="Victoria"
+                        Icon="victoria.png" />
+
+</TabbedPage>

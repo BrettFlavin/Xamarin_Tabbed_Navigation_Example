@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="HW3_Tabbed.TangPage"
+             Title ="Lake Tanganyika"
+             BackgroundColor="LightBlue">
+    
+    <ContentPage.Content>
+        <StackLayout Margin="10,0,10,0"
+                     Spacing="5">
+
+            <Label Text="Lake Tanganyika"
+                   TextColor="Black"
+                   TextDecorations="Underline"
+                   FontSize="40"
+                   VerticalOptions="Center" 
+                   HorizontalOptions="Center" />
+
+            <!-- A horizontal ScrollView of Lake Tanganyika pics -->
+            <ScrollView Orientation="Horizontal" >
+                <StackLayout Orientation="Horizontal"
+                             Spacing="10">
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/4/42/Lake_Tanganyika_at_Gombe_Stream_National_Park.jpg"    
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/8/86/Beach_in_Bujumbura.jpg"                    
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/1/1e/Burundi_-_Lake_Tanganyika_fisheries.jpg"
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                    <Image Source="https://upload.wikimedia.org/wikipedia/commons/9/91/Lake_Tanganyika_-_Flickr_-_Dave_Proffer_%281%29.jpg"    
+                           HeightRequest="340"
+                           WidthRequest="340"
+                           Aspect="AspectFill" />
+                </StackLayout>
+            </ScrollView>
+
+            <!-- A vertical ScrollView containing the main body text -->
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Lake Tanganyika is the second largest of the lakes of eastern Africa. It is the longest freshwater lake in the world (410 miles [660 km]) and the second deepest (4,710 feet [1,436 metres]) after Lake Baikal in Russia. Comparatively narrow, varying in width from 10 to 45 miles (16 to 72 km), it covers about 12,700 quare miles (32,900 square km) and forms the boundary between Tanzania and the Democratic Republic of the Congo (DRC) and part of the boundary between Burundi and the DRC as well as part of the boundary between Tanzania and Zambia. It occupies the southern end of the Western Rift Valley, and for most of its length the land rises steeply from its shores. Its waters tend to be brackish. Though fed by a number of rivers, the lake is not the centre of an extensive drainage area. The largest rivers discharging into the lake are the Malagarasi, the Ruzizi, and the Kalambo, which has one of the highest waterfalls in the world (704 feet [215 metres]; see Kalambo Falls). Its outlet is the Lukuga River, which flows into the Lualaba River. Lake Tanganyika is situated on the line dividing the floral regions of eastern and western Africa, and oil palms, which are characteristic of the flora of western Africa, grow along the lake's shores. Rice and subsistence crops are grown along the shores, and fishing is of some significance. Hippopotamuses and crocodiles abound, and the bird life is varied."
+                           TextColor="Gray"
+                           FontSize="12"/>
+                </StackLayout>
+            </ScrollView>
+
+            <!-- A Label that displays Lake Tanganyika local time on Button click-->
+            <Label x:Name="TangTime"
+                   Text=""                   
+                   BackgroundColor="Black"
+                   TextColor="White"
+                   FontSize="Large"
+                   HorizontalOptions="Center" />
+            
+            <Button x:Name="TangTimeButton" 
+                    Text="Lake Tanganyika Local Time"   
+                    BackgroundColor="LightSteelBlue"
+                    CornerRadius="15"
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center" 
+                    Clicked="TangTimeButton_Clicked" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
