@@ -77,11 +77,19 @@ This application was created in Visual Studio 2019 using Xamarin.Forms to target
 
 Here are some example screenshots of the application running on an Android device:
 
-![screenshot1](https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/blob/master/screenshot1.PNG)    ![screenshot2](https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/blob/master/screenshot2.PNG)
+![screenshot1](https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/blob/master/screenshot1.PNG)    
 
 
 
-![screenshot3](https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/blob/master/screenshot3.PNG)    ![screenshot4](https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/blob/master/screenshot4.PNG)  
+![screenshot2](https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/blob/master/screenshot2.PNG)
+
+
+
+![screenshot3](https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/blob/master/screenshot3.PNG)    
+
+
+
+![screenshot4](https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/blob/master/screenshot4.PNG)  
 
 
 
