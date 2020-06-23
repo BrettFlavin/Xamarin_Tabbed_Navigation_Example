@@ -4,9 +4,7 @@
              xmlns:local="clr-namespace:HW3_Tabbed"
              x:Class="HW3_Tabbed.NaviTab"
              Title ="HomePage"
-             BackgroundColor="LightBlue"
-             Appearing="OnAppearing"
-             Disappearing="OnDisappearing">
+             BackgroundColor="LightBlue">
     
     <!-- TabbedPage child pages-->
     <local:AfricaPage Title="Home" 
