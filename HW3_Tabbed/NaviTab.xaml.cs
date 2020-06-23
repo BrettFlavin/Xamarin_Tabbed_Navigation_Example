@@ -19,17 +19,6 @@ namespace HW3_Tabbed
             // must enable so the horizontal scrollviews of pictures scroll properly 
             Xamarin.Forms.PlatformConfiguration.AndroidSpecific.TabbedPage.SetIsSwipePagingEnabled(this, false);
         }
-
-        // called when tabbed page appears
-        void OnAppearing(object sender, System.EventArgs e)
-        {
-            DisplayAlert("Welcome to the " + this.Title, "I Missed You!", "OK");
-        }
-
-        // called when tabbed page disappears
-        void OnDisappearing(object sender, System.EventArgs e)
-        {
-            DisplayAlert("Bye!", "Come Back Soon!", "OK");
-        }
+       
     }
 }
