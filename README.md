@@ -18,7 +18,7 @@
 
 <!-- PROJECT LOGO -->
 <br />
- <h3 align="center">Simple app to demonstrate Hierarchy Navigation</h3>
+ <h3 align="center">Simple app to demonstrate tabbed navigation</h3>
 
   <p align="center">    
     <a href="https://github.com/BrettFlavin/Xamarin_Tabbed_Navigation_Example/issues">Report Bug</a>
